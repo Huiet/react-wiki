@@ -1,0 +1,35 @@
+.react-logo {
+    height: 3em;
+    padding-left: 1em;
+    padding-top: .5em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+    padding: 1em 0 0 0;
+}
+
+.navigation-header {
+    position: sticky;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    overflow: auto;
+
+    & li a{
+        text-decoration: none;
+        color: black;
+        padding-top: 1em;
+    }
+}
+
+.nav-link {
+    &-active {
+        font-weight: 600;
+        //padding-bottom:.5em;
+        border-bottom:2px solid green;
+    }
+}
