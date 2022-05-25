@@ -17,8 +17,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
-  },
+    "jsx": "react-jsx",
+    "paths": {
+      "@common": ["src/common/index.ts"]
+    },
   "include": [
     "src",
     "src/custom.d.ts"
