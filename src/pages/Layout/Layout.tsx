@@ -1,17 +1,18 @@
 import React from "react";
-import { NavLink, Outlet} from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import './Layout.scss';
 import {ReactComponent as ReactLogo }  from '../../assets/react-logo.svg'
 
 import { NavigationLink, NavigationHeader, ThemeToggle } from './Layout.style';
 import { URL_PATHS } from '../../common';
-import { Themes } from '../../Theme';
+import { capitalize } from '../../common/Utilities';
+
 
 function Layout({theme, toggleTheme}: any) {
 
 
-
   function onUpdateTheme() {
+    console.log('functing')
     toggleTheme();
   }
 
@@ -37,8 +38,10 @@ function Layout({theme, toggleTheme}: any) {
                         </NavigationLink>
                     </li>
                 </ul>
-              <ThemeToggle onClick={() => onUpdateTheme()}>
-                {theme}
+              <ThemeToggle
+                variant='primary'
+                onClick={() => onUpdateTheme()}>
+                {capitalize(theme)} Mode
               </ThemeToggle>
             </NavigationHeader>
             <hr />

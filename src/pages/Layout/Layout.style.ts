@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { NavLink} from "react-router-dom";
-import { darkTheme, lightTheme, Themes } from '../../Theme';
+import { Button } from '../../components/Button/Button';
 
 export const NavigationLink = styled(NavLink)`
   &.active {
     font-weight: 600;
-    border-bottom: 2px solid green;  
+    border-bottom: ${props => '2px solid ' + props.theme.primary };  
   }
 `;
 
@@ -24,8 +24,16 @@ export const NavigationHeader = styled.nav`
 `;
 
 
-export const ThemeToggle = styled.button`
+
+export const ThemeToggle = styled(Button)`
   background-color: ${props => props.theme.primary};
   color: ${props => props.theme.text};
-  justify-self: flex-end;
+  margin: 1em 1em 0 auto;
+  align-self: center;
   `;
+// export const ThemeToggle = styled.button`
+//   background-color: ${props => props.theme.primary};
+//   color: ${props => props.theme.text};
+//   margin: 1em 1em 0 auto;
+//   align-self: center;
+//   `;

@@ -1,19 +1,25 @@
+import { colors } from './colors';
+
+
 export const lightTheme = {
-    body: '#FFF',
-    text: '#363537',
-    primary: '#fc9257',
-    secondary: '#57c2fc',
-    toggleBorder: '#FFF',
-    background: '#363537',
+    body: colors.bodyLight,
+    text: colors.textLight,
+    primary: colors.primaryLight,
+    secondary: colors.secondaryLight,
+    background: colors.backgroundLight,
+    primaryHover: colors.primaryHoverLight,
+    secondaryHover: colors.secondaryHoverLight,
 }
 export const darkTheme = {
-    body: '#363537',
-    text: '#FAFAFA',
-    primary: '#fc5770',
-    secondary: '#fce357',
-    toggleBorder: '#6B8096',
-    background: '#121212',
+    body: colors.bodyDark,
+    text: colors.textDark,
+    primary: colors.primaryDark,
+    secondary: colors.secondaryDark,
+    background: colors.backgroundDark,
+    primaryHover: colors.primaryHoverDark,
+    secondaryHover: colors.secondaryHoverDark,
 }
+
 
 export enum Themes {
     LIGHT= 'light',

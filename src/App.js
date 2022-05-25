@@ -1,13 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Layout from "./pages/Layout/Layout.tsx";
 import {URL_PATHS} from "./common";
 import StyledComponentsPage from "./pages/StyledComponentsPage/styled-components-page";
-// import AboutMe from "./pages/AboutMe";
-
-// const AboutMe = React.lazy(() => import('./pages/AboutMe/about-me')); // todo: ask why this doesn't work with index files????
 
 import {ThemeProvider} from "styled-components";
 import {GlobalStyles, Themes} from './Theme';
